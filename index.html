@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html class="gradienter">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/D20.jpg">
+    <title>Explorer's Encyclopedia</title>
+    <header class="HeaderGradient MidText">
+        Dungeons and Dragons search 
+    </header>
+    <body class="gradienter map">
+        <br><br><br><br><br><br><br>
+        <table class="Search_Table MidText STool">
+            <tr>
+                <td class="STool">
+                    Search for anything from D&D!
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input type="text" placeholder="..." name="Search" id="Search">
+                        <button type="submit"  value="submit"><i class="Search">Search</i></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <script src="main.js"></script>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table class="Result_Table MidText STool">
+            <tr>
+                <td>
+                    Results:
+                </td>
+            </tr>
+            <td>
+                <p id="ResultText"></p>
+                <script>
+                    fetch_API()
+                </script>
+            </td>
+        </table>
+    </body>
+</html>
